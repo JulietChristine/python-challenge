@@ -30,9 +30,8 @@ with open(file_path, "r") as txtfile:
     for line in txtfile:
         for word in line:
             words += word
-for line in words:
-    wordy = words.rstrip("\n\n")
-words_list = wordy.split()
+
+words_list = words.split()
 sentence_list = words.split("\n\n")
 
 character_count = 0
