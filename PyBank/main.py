@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join("Resources/budget_data.csv")
+csvpath = os.path.join("Resources","budget_data.csv")
 with open(csvpath, 'r') as csvfile:
     pybank_csv = csv.reader(csvfile, delimiter = ',')
     csv_header = next(pybank_csv)

@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join("Resources/election_data.csv")
+csvpath = os.path.join("Resources", "election_data.csv")
 with open(csvpath, 'r') as csvfile:
     pypoll_csv = csv.reader(csvfile, delimiter = ',')
     csv_header = next(pypoll_csv)

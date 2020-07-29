@@ -1,6 +1,6 @@
 import os
 
-file_path = os.path.join("Resources/paragraph_1.txt")
+file_path = os.path.join("Resources", "paragraph_1.txt")
 with open(file_path, "r") as txtfile:
     words = ""
     for word in txtfile:
@@ -24,7 +24,7 @@ print(f"Average Sentence Length: {round(avg_sentence, 1)}" + "\n")
 # I had tough time with the new lines,
 # so I wasnt able to make a single code that worked on both
 
-file_path = os.path.join("Resources/paragraph_2.txt")
+file_path = os.path.join("Resources", "paragraph_2.txt")
 with open(file_path, "r") as txtfile:
     words = ""
     for line in txtfile:
